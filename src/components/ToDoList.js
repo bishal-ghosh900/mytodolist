@@ -39,7 +39,7 @@ function ToDoList(props) {
         setDataCall(true);
       }
     }
-  }, [todos]);
+  }, [todos, dataCall]);
 
   let handleCross = (e) => {
     let key = Number(e.target.name);
