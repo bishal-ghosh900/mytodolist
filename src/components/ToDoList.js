@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 function ToDoList(props) {
   const [text, setText] = useState("");
@@ -86,7 +87,13 @@ function ToDoList(props) {
       </div>
       {todos &&
         todos.map((v, index) => (
-          <div key={v.toString()} className="textDiv">
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            whileHover={{ scale: 1.1 }}
+            key={v.toString()}
+            className="textDiv"
+          >
             <button
               className={v.check ? "checkedDiv" : "texts"}
               name={index}
@@ -97,7 +104,7 @@ function ToDoList(props) {
             <button name={index} onClick={handleCross} className="cross">
               X
             </button>
-          </div>
+          </motion.div>
         ))}
     </div>
   );

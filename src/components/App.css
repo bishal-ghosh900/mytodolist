@@ -15,7 +15,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .heading {
   width: 80%;
