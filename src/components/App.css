@@ -150,6 +150,8 @@
   }
   .input {
     width: 80%;
+    font-size: 1rem;
+    padding: 5px;
   }
   .textDiv {
     width: 100%;
