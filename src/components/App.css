@@ -144,7 +144,7 @@
   .todos {
     width: 100%;
     height: 40px;
-    border: solid green;
+    /* border: solid green; */
   }
   .addtodos {
     width: 20%;
